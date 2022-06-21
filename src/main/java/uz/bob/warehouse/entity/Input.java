@@ -27,6 +27,7 @@ public class Input {
     private Currency currency;
 
     private String factureNumber;
+
     @Column(unique = true,nullable = false)
     private String code;
 }

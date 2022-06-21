@@ -2,11 +2,12 @@ package uz.bob.warehouse.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
-
+@EqualsAndHashCode
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
