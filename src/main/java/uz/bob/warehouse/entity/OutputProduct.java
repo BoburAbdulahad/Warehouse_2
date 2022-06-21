@@ -18,8 +18,10 @@ public class OutputProduct {
     @ManyToOne
     private Product product;
 
+    @Column(nullable = false)
     private Double amount;
 
+    @Column(nullable = false)
     private Double price;
 
     @ManyToOne

@@ -26,8 +26,10 @@ public class Output {
     @ManyToOne
     private Currency currency;
 
+    @Column(nullable = false)
     private String factureNumber;
 
+    @Column(nullable = false)
     private String code;
 
     @ManyToOne

@@ -17,6 +17,7 @@ public class Input {
     private Integer id;
 
     private Timestamp date;
+
     @ManyToOne
     private Warehouse warehouse;
 
@@ -26,6 +27,7 @@ public class Input {
     @ManyToOne
     private Currency currency;
 
+    @Column(nullable = false)
     private String factureNumber;
 
     @Column(unique = true,nullable = false)

@@ -6,6 +6,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import uz.bob.warehouse.entity.template.AbsEntity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
@@ -23,7 +24,7 @@ public class Product extends AbsEntity {
     @OneToOne
     private Attachment photo;
 
-
+    @Column(nullable = false)
     private String code;
 
     @ManyToOne

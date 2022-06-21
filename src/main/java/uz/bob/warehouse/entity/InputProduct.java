@@ -22,6 +22,7 @@ public class InputProduct {
     @Column(nullable = false)
     private Double amount;
 
+    @Column(nullable = false)
     private Double price;
 
     private Date expireDate;
