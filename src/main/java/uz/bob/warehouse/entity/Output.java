@@ -28,4 +28,7 @@ public class Output {
     private String factureNumber;
 
     private String code;
+
+    @ManyToOne
+    private Client client;
 }

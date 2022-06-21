@@ -26,5 +26,4 @@ public class OutputProduct {
     private Output output;
 
 
-    private Client client;
 }
