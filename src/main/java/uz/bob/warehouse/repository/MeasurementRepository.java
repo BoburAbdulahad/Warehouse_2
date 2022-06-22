@@ -10,4 +10,5 @@ import uz.bob.warehouse.projection.CustomMeasurement;
 @RepositoryRestResource(path = "measurement",collectionResourceRel = "measurementList",excerptProjection = CustomMeasurement.class)
 public interface MeasurementRepository extends JpaRepository<Measurement,Integer> {
 
+    boolean existsByName(String name);
 }
